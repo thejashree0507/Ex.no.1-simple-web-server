@@ -41,7 +41,7 @@ Stop the Spring Boot server once testing is complete.
 
 
 ## Program 
-
+```
 simple-web-server/
 ├── src/
 │   └── main/
@@ -52,7 +52,7 @@ simple-web-server/
 │       └── resources/
 │           └── application.properties
 ├── pom.xml
-
+```
  ### Pom.xml
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -93,7 +93,7 @@ simple-web-server/
 </project>
 
 ### DemoApplication.java
-
+```java
 package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -105,9 +105,11 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
-
+```
 
 ### HelloController.java
+
+```java
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -121,7 +123,7 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
-
+```
 
 ### application.properties:
 
@@ -130,6 +132,12 @@ public class HelloController {
 
 
 
-Output:
+## Output:
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f1d33218-7363-47f3-ae9c-b17bb40584b2" />
 
 
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3833c887-219a-41c7-99e0-db28927417a1" />
+
+## RESULT:
+
+Thus, the Simple Web Server was successfully developed and executed using Spring Boot in IntelliJ IDEA. The RESTful endpoint /hello was tested successfully, and it returned the output "Hello, Spring Boot!" in the web browser.
